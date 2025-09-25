@@ -12,7 +12,10 @@ steps:
 - script: |
     python -m pip install --upgrade pip
     pip install -r requirements.txt
-    python app.py &
-    sleep 5
-    curl http://127.0.0.1:8080
-  displayName: "Run Flask App and Test"
+  displayName: "Install dependencies"
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: "AzureServiceConnection"
+    appName: "flask-hello-world-sshorya"
+    package: "$(System.DefaultWorkingDirectory)"
