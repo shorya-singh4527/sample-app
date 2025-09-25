@@ -14,5 +14,5 @@ steps:
     pip install -r requirements.txt
     python app.py &
     sleep 5
-    curl http://127.0.0.1:5000
+    curl http://127.0.0.1:8080
   displayName: "Run Flask App and Test"
