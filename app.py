@@ -6,8 +6,8 @@ app = Flask(__name__)
 def home():
     return """
     <html>
-        <head><title>Hello World</title></head>
-        <body style="background-color: green; color: white; text-align: center; padding-top: 200px;">
+        <head><title>Hello World ! Good Morning !</title></head>
+        <body style="background-color: yellow; color: red; text-align: center; padding-top: 200px;">
             <h1>Hello World</h1>
         </body>
     </html>
